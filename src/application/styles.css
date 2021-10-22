@@ -1,0 +1,90 @@
+:root {
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 3rem;
+  --space-xl: 4rem;
+  --space-xxl: 5rem;
+  --space-xxxl: 5rem;
+}
+
+.container {
+  min-width: 100%;
+  width: calc(100% - var(--space-xl, 4rem));
+}
+@media screen and (min-width: 576px) {
+  .container {
+    min-width: 576px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    min-width: 768px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container {
+    min-width: 992px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    min-width: 1200px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .container {
+    min-width: 1400px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .container--sm {
+    min-width: 100%;
+  }
+}
+@media screen and (min-width: 576px) {
+  .container--md {
+    min-width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container--md {
+    min-width: 100%;
+  }
+}
+@media screen and (min-width: 576px) {
+  .container--lg {
+    min-width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container--lg {
+    min-width: 100%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container--lg {
+    min-width: 100%;
+  }
+}
+@media screen and (min-width: 576px) {
+  .container--xl {
+    min-width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container--xl {
+    min-width: 100%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container--xl {
+    min-width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container--xl {
+    min-width: 100%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

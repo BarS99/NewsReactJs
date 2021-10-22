@@ -1,0 +1,76 @@
+@use "sass:map";
+
+@use "../utilities/variables";
+
+.container {
+  min-width: 100%;
+  width: calc(100% - var(--space-xl, 4rem));
+
+  @media screen and (min-width: map.get(variables.$breakpoints, "sm")) {
+    min-width: map.get(variables.$breakpoints, "sm");
+  }
+
+  @media screen and (min-width: map.get(variables.$breakpoints, "md")) {
+    min-width: map.get(variables.$breakpoints, "md");
+  }
+
+  @media screen and (min-width: map.get(variables.$breakpoints, "lg")) {
+    min-width: map.get(variables.$breakpoints, "lg");
+  }
+
+  @media screen and (min-width: map.get(variables.$breakpoints, "xl")) {
+    min-width: map.get(variables.$breakpoints, "xl");
+  }
+
+  @media screen and (min-width: map.get(variables.$breakpoints, "xxl")) {
+    min-width: map.get(variables.$breakpoints, "xxl");
+  }
+
+  &--sm {
+    @media screen and (min-width: map.get(variables.$breakpoints, "sm")) {
+      min-width: 100%;
+    }
+  }
+
+  &--md {
+    @media screen and (min-width: map.get(variables.$breakpoints, "sm")) {
+      min-width: 100%;
+    }
+
+    @media screen and (min-width: map.get(variables.$breakpoints, "md")) {
+      min-width: 100%;
+    }
+  }
+
+  &--lg {
+    @media screen and (min-width: map.get(variables.$breakpoints, "sm")) {
+      min-width: 100%;
+    }
+
+    @media screen and (min-width: map.get(variables.$breakpoints, "md")) {
+      min-width: 100%;
+    }
+
+    @media screen and (min-width: map.get(variables.$breakpoints, "lg")) {
+      min-width: 100%;
+    }
+  }
+
+  &--xl {
+    @media screen and (min-width: map.get(variables.$breakpoints, "sm")) {
+      min-width: 100%;
+    }
+
+    @media screen and (min-width: map.get(variables.$breakpoints, "md")) {
+      min-width: 100%;
+    }
+
+    @media screen and (min-width: map.get(variables.$breakpoints, "lg")) {
+      min-width: 100%;
+    }
+
+    @media screen and (min-width: map.get(variables.$breakpoints, "xl")) {
+      min-width: 100%;
+    }
+  }
+}
