@@ -1,1 +1,14 @@
+@use "./utilities/variables";
+
+@use "./general";
+
 @use "./components/container";
+@use "./components/author";
+@use "./components/badge";
+
+@use "./layouts/Main/layoutMain";
+
+@use "./sections/Article/article";
+@use "./sections/Header/header";
+@use "./sections/Footer/footer";
+@use "./sections/Slider/slider";

@@ -1,0 +1,165 @@
+@use "sass:map";
+
+@use "../../utilities/variables" as variables;
+
+.header {
+  padding: var(--space-sm) 0;
+  z-index: 1000;
+  position: relative;
+  background-color: hsl(0, 0%, 20%);
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &____left {
+    flex-shrink: 0;
+  }
+
+  &__logo {
+    height: 3em;
+  }
+
+  &__logo img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  &__toggle {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1.5rem;
+    width: 1.5em;
+    height: 1.5em;
+    color: #fff;
+  }
+
+  @media screen and (max-width: calc(map.get(variables.$breakpoints, "md") - 1px)) {
+    &__nav {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      transform: translateX(100%);
+      z-index: 100;
+      max-width: 280px;
+      width: 100%;
+      background-color: #fff;
+      border-left: 1px solid var(--color-primary);
+      transition: transform 0.6s;
+      padding: var(--space-md);
+      display: flex;
+      flex-direction: column;
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        overflow-y: auto;
+        flex-grow: 1;
+        overflow-y: auto;
+      }
+
+      ul::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      ul::-webkit-scrollbar-track {
+        background: hsl(0, 0%, 60%);
+        border-radius: 8px;
+      }
+
+      ul::-webkit-scrollbar-thumb {
+        background: var(--color-primary);
+        border-radius: 8px;
+      }
+
+      ul::-webkit-scrollbar-thumb:hover {
+        background: hsl(0, 0%, 0%);
+      }
+
+      li {
+        display: block;
+        width: 100%;
+      }
+
+      li + li {
+        border-top: 1px solid var(--color-primary);
+      }
+
+      a {
+        display: block;
+        padding: 0.75em 0;
+        font-size: 1.125rem;
+        text-decoration: none;
+        text-align: center;
+        font-weight: 700;
+      }
+
+      &-mask {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: hsla(0, 0%, 0%, 0.8);
+      }
+
+      &-close {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1em;
+        background-color: var(--color-primary);
+        color: #fff;
+        font-weight: 700;
+        margin-bottom: 1em;
+      }
+    }
+
+    &--show-nav &__nav {
+      transform: translateX(0);
+    }
+  }
+
+  @media screen and (min-width: map.get(variables.$breakpoints, "md")) {
+    &__toggle {
+      display: none;
+    }
+
+    &__nav-close {
+      display: none;
+    }
+
+    &__nav ul {
+      display: flex;
+      align-items: center;
+    }
+
+    &__nav a {
+      text-decoration: none;
+      display: block;
+      padding: 0.5em 1em;
+      color: #fff;
+    }
+  }
+
+  @media screen and (min-width: map.get(variables.$breakpoints, "lg")) {
+    &__nav a {
+      transition: color 0.2s, background-color 0.2s;
+    }
+
+    &__nav a:hover {
+      background-color: var(--color-primary);
+      color: hsl(0, 0%, 100%);
+    }
+  }
+
+  @media screen and (min-width: map.get(variables.$breakpoints, "xl")) {
+    margin-bottom: var(--space-sm);
+  }
+}

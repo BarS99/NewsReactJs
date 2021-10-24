@@ -1,76 +1,87 @@
 @use "sass:map";
 
-@use "../utilities/variables";
+@use "../utilities/variables" as variables;
 
 .container {
-  min-width: 100%;
-  width: calc(100% - var(--space-xl, 4rem));
+  max-width: 100%;
+  width: calc(100% - var(--space-lg, 4rem));
+  margin-left: auto;
+  margin-right: auto;
+
+  &--full {
+    width: 100% !important;
+    max-width: map.get(variables.$breakpoints, "xl") !important;
+
+    @media screen and (min-width: map.get(variables.$breakpoints, "xl")) {
+      width: calc(100% - var(--space-lg, 4rem)) !important;
+    }
+  }
 
   @media screen and (min-width: map.get(variables.$breakpoints, "sm")) {
-    min-width: map.get(variables.$breakpoints, "sm");
+    max-width: map.get(variables.$breakpoints, "sm");
   }
 
   @media screen and (min-width: map.get(variables.$breakpoints, "md")) {
-    min-width: map.get(variables.$breakpoints, "md");
+    max-width: map.get(variables.$breakpoints, "md");
   }
 
   @media screen and (min-width: map.get(variables.$breakpoints, "lg")) {
-    min-width: map.get(variables.$breakpoints, "lg");
+    max-width: map.get(variables.$breakpoints, "lg");
   }
 
   @media screen and (min-width: map.get(variables.$breakpoints, "xl")) {
-    min-width: map.get(variables.$breakpoints, "xl");
+    max-width: map.get(variables.$breakpoints, "xl");
   }
 
   @media screen and (min-width: map.get(variables.$breakpoints, "xxl")) {
-    min-width: map.get(variables.$breakpoints, "xxl");
+    max-width: map.get(variables.$breakpoints, "xxl");
   }
 
   &--sm {
     @media screen and (min-width: map.get(variables.$breakpoints, "sm")) {
-      min-width: 100%;
+      max-width: map.get(variables.$breakpoints, "sm");
     }
   }
 
   &--md {
     @media screen and (min-width: map.get(variables.$breakpoints, "sm")) {
-      min-width: 100%;
+      max-width: map.get(variables.$breakpoints, "sm");
     }
 
     @media screen and (min-width: map.get(variables.$breakpoints, "md")) {
-      min-width: 100%;
+      max-width: map.get(variables.$breakpoints, "md");
     }
   }
 
   &--lg {
     @media screen and (min-width: map.get(variables.$breakpoints, "sm")) {
-      min-width: 100%;
+      max-width: map.get(variables.$breakpoints, "sm");
     }
 
     @media screen and (min-width: map.get(variables.$breakpoints, "md")) {
-      min-width: 100%;
+      max-width: map.get(variables.$breakpoints, "md");
     }
 
     @media screen and (min-width: map.get(variables.$breakpoints, "lg")) {
-      min-width: 100%;
+      max-width: map.get(variables.$breakpoints, "lg");
     }
   }
 
   &--xl {
     @media screen and (min-width: map.get(variables.$breakpoints, "sm")) {
-      min-width: 100%;
+      max-width: map.get(variables.$breakpoints, "sm");
     }
 
     @media screen and (min-width: map.get(variables.$breakpoints, "md")) {
-      min-width: 100%;
+      max-width: map.get(variables.$breakpoints, "md");
     }
 
     @media screen and (min-width: map.get(variables.$breakpoints, "lg")) {
-      min-width: 100%;
+      max-width: map.get(variables.$breakpoints, "lg");
     }
 
     @media screen and (min-width: map.get(variables.$breakpoints, "xl")) {
-      min-width: 100%;
+      max-width: map.get(variables.$breakpoints, "xl");
     }
   }
 }

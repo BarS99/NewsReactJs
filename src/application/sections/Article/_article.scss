@@ -1,0 +1,202 @@
+@use "sass:map";
+
+@use "../../utilities/variables" as variables;
+
+.article-section {
+  margin: var(--space-md) 0;
+
+  &__title {
+    font-size: 1.5rem;
+    margin-bottom: var(--space-md);
+  }
+}
+
+.article-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+
+  @media screen and (min-width: map.get(variables.$breakpoints, "sm")) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (min-width: map.get(variables.$breakpoints, "lg")) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media screen and (min-width: map.get(variables.$breakpoints, "xl")) {
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
+
+@keyframes spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.article-loader {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__spinner {
+    width: 3rem;
+    height: 3rem;
+    border: 0.8rem solid hsl(0, 0%, 80%);
+    border-top-color: var(--color-primary);
+    margin: 2rem;
+    border-radius: 50%;
+    animation: spinning linear 1s;
+    animation-iteration-count: infinite;
+    animation-direction: forward;
+    display: none;
+  }
+
+  &--active &__spinner {
+    display: block;
+  }
+}
+
+.article-box {
+  display: block;
+
+  &__inner {
+    display: block;
+    position: relative;
+  }
+
+  .badge {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+  }
+
+  .author {
+    margin-bottom: 0.5rem;
+  }
+
+  &__image {
+    margin-bottom: 1rem;
+    overflow: hidden;
+
+    & img {
+      display: block;
+      max-width: 100%;
+      transition: transform ease-out 0.4s;
+    }
+  }
+
+  &__title {
+    margin-bottom: 0.5rem;
+    font-size: 1.125rem;
+    line-height: 1.4;
+  }
+
+  @media screen and (max-width: calc(map.get(variables.$breakpoints, "sm") - 1px)) {
+    &--no-text {
+      & .article-box__image {
+        margin-bottom: 0;
+      }
+
+      & .article-box__content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        color: #fff;
+        background: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 0.8) 0%,
+          rgba(0, 0, 0, 0.4) 80%,
+          rgba(0, 0, 0, 0)
+        );
+      }
+
+      & .article-box__title {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  @media screen and (min-width: map.get(variables.$breakpoints, "xl")) {
+    grid-column: span 4;
+
+    &:first-child {
+      grid-column: span 8;
+      display: flex;
+
+      & .article-box__inner {
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: repeat(5, 1fr);
+      }
+
+      & .article-box__image {
+        display: flex;
+        grid-column: span 2;
+
+        img {
+          object-fit: cover;
+        }
+      }
+
+      & .article-box__content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        grid-column: span 3;
+      }
+    }
+
+    &:not(:first-child) .article-box__content {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      padding: 1rem;
+      background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(0, 0, 0, 0.4) 80%,
+        rgba(0, 0, 0, 0)
+      );
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-end;
+    }
+
+    & .badge {
+      position: static;
+      margin-bottom: 1rem;
+    }
+
+    &__image {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: map.get(variables.$breakpoints, "lg")) {
+    &__inner:hover .article-box__title {
+      text-decoration: underline;
+    }
+
+    &__inner:hover .article-box__image img {
+      transform: scale(1.05);
+    }
+  }
+}

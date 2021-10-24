@@ -1,0 +1,21 @@
+.badge {
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  border-radius: 30px;
+  background-color: #000;
+  color: #fff;
+  display: inline-flex;
+  font-weight: 700;
+
+  &--primary {
+    background-color: var(--color-primary);
+  }
+
+  &--secondary {
+    background-color: var(--color-secondary);
+  }
+
+  &--tertiary {
+    background-color: var(--color-tertiary);
+  }
+}

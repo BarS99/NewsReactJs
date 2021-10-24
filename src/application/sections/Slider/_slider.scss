@@ -1,0 +1,103 @@
+@use "sass:map";
+
+@use "../../utilities/variables" as variables;
+
+.slider {
+  position: relative;
+
+  & .badge {
+    margin-bottom: 1rem;
+  }
+
+  & .author {
+    margin-bottom: 0.5rem;
+  }
+
+  &__slide {
+    position: relative;
+  }
+
+  &__background img {
+    display: block;
+    max-width: 100%;
+  }
+
+  &__content {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0.4) 80%,
+      rgba(0, 0, 0, 0)
+    );
+    color: #fff;
+    padding: 1rem 0 3rem;
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    line-height: 1.4;
+  }
+
+  &__text {
+    display: none;
+  }
+
+  &__pagination {
+    position: absolute;
+    bottom: 1.5rem;
+    left: var(--space-md);
+    right: var(--space-md);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__pagination-item {
+    width: 10px;
+    height: 10px;
+    border: 1px solid var(--color-secondary);
+    background-color: var(--color-secondary);
+    transition: background-color 0.2s, border-color 0.2s;
+
+    & + & {
+      margin-left: 1rem;
+    }
+
+    &--active {
+      background-color: hsl(0, 0%, 100%);
+    }
+  }
+
+  @media screen and (min-width: map.get(variables.$breakpoints, "md")) {
+    &__title {
+      font-size: 1.75rem;
+    }
+
+    .slider__text {
+      display: block;
+      margin-top: 0.5rem;
+    }
+  }
+
+  @media screen and (min-width: map.get(variables.$breakpoints, "lg")) {
+    .slider__content {
+      padding-bottom: 4rem;
+    }
+
+    .slider__pagination {
+      bottom: 2em;
+    }
+
+    &__title {
+      font-size: 2rem;
+    }
+
+    .slider__text {
+      font-size: 1rem;
+    }
+  }
+}
