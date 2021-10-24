@@ -1,26 +1,349 @@
 {
-  "employees": [
+  "articles": [
     {
       "id": 1,
-      "first_name": "Sebastian",
-      "last_name": "Eschweiler",
-      "email": "sebastian@codingthesmartway.com"
+      "image_560": "examples/article1-560.jpg",
+      "image_1120": "examples/article1-1120.jpg",
+      "category": "Politics",
+      "badge": "Hot News",
+      "badge_color": "purple",
+      "title": "Trump's new social media company says users won't be censored",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida velit pharetra, tincidunt lorem et, cursus lacus. Cras lacinia arcu nec varius efficitur.",
+      "author": "John Freeman"
     },
     {
       "id": 2,
-      "first_name": "Steve",
-      "last_name": "Palmer",
-      "email": "steve@codingthesmartway.com"
+      "image_560": "examples/article2-560.jpg",
+      "image_1120": "examples/article2-1120.jpg",
+      "category": "Economy",
+      "badge": "Music and Movies",
+      "badge_color": "red",
+      "title": "Oil prices as expensive as never before!",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida velit pharetra, tincidunt lorem et, cursus lacus. Cras lacinia arcu nec varius efficitur.",
+      "author": "Jerry Moll"
     },
     {
       "id": 3,
-      "first_name": "Ann",
-      "last_name": "Smith",
-      "email": "ann@codingthesmartway.com"
+      "image_560": "examples/article3-560.jpg",
+      "image_1120": "examples/article3-1120.jpg",
+      "category": "Global Conflicts",
+      "badge": "Gas and Oil",
+      "badge_color": "orange",
+      "title": "Is World War III on horizon?",
+      "text": "",
+      "author": "Anna Calleb"
     },
     {
-      "Janusz": "Debil",
-      "id": 4
+      "id": 4,
+      "image_560": "examples/article1-560.jpg",
+      "image_1120": "examples/article1-1120.jpg",
+      "category": "Politics",
+      "badge": "Hot News",
+      "badge_color": "purple",
+      "title": "Trump's new social media company says users won't be censored",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida velit pharetra, tincidunt lorem et, cursus lacus. Cras lacinia arcu nec varius efficitur.",
+      "author": "John Freeman"
+    },
+    {
+      "id": 5,
+      "image_560": "examples/article2-560.jpg",
+      "image_1120": "examples/article2-1120.jpg",
+      "category": "Economy",
+      "badge": "Music and Movies",
+      "badge_color": "red",
+      "title": "Oil prices as expensive as never before!",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida velit pharetra, tincidunt lorem et, cursus lacus. Cras lacinia arcu nec varius efficitur.",
+      "author": "Jerry Moll"
+    },
+    {
+      "id": 6,
+      "image_560": "examples/article3-560.jpg",
+      "image_1120": "examples/article3-1120.jpg",
+      "category": "Global Conflicts",
+      "badge": "Hot News",
+      "badge_color": "orange",
+      "title": "Is World War III on horizon?",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida velit pharetra, tincidunt lorem et, cursus lacus. Cras lacinia arcu nec varius efficitur.",
+      "author": "Anna Calleb"
+    },
+    {
+      "id": 7,
+      "image_560": "examples/article1-560.jpg",
+      "image_1120": "examples/article1-1120.jpg",
+      "category": "Politics",
+      "badge": "Gas and Oil",
+      "badge_color": "purple",
+      "title": "Trump's new social media company says users won't be censored",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida velit pharetra, tincidunt lorem et, cursus lacus. Cras lacinia arcu nec varius efficitur.",
+      "author": "John Freeman"
+    },
+    {
+      "id": 8,
+      "image_560": "examples/article2-560.jpg",
+      "image_1120": "examples/article2-1120.jpg",
+      "category": "Economy",
+      "badge": "Music and Movies",
+      "badge_color": "red",
+      "title": "Oil prices as expensive as never before!",
+      "text": "",
+      "author": "Jerry Moll"
+    },
+    {
+      "id": 9,
+      "image_560": "examples/article3-560.jpg",
+      "image_1120": "examples/article3-1120.jpg",
+      "category": "Global Conflicts",
+      "badge": "Music and Movies",
+      "badge_color": "orange",
+      "title": "Is World War III on horizon?",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida velit pharetra, tincidunt lorem et, cursus lacus. Cras lacinia arcu nec varius efficitur.",
+      "author": "Anna Calleb"
+    },
+    {
+      "id": 10,
+      "image_560": "examples/article1-560.jpg",
+      "image_1120": "examples/article1-1120.jpg",
+      "category": "Politics",
+      "badge": "Gas and Oil",
+      "badge_color": "purple",
+      "title": "Trump's new social media company says users won't be censored",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida velit pharetra, tincidunt lorem et, cursus lacus. Cras lacinia arcu nec varius efficitur.",
+      "author": "John Freeman"
+    },
+    {
+      "id": 11,
+      "image_560": "examples/article2-560.jpg",
+      "image_1120": "examples/article2-1120.jpg",
+      "category": "Economy",
+      "badge": "Gas and Oil",
+      "badge_color": "red",
+      "title": "Oil prices as expensive as never before!",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida velit pharetra, tincidunt lorem et, cursus lacus. Cras lacinia arcu nec varius efficitur.",
+      "author": "Jerry Moll"
+    }
+  ],
+  "articles2": [
+    {
+      "id": 12,
+      "image_560": "examples/article6-560.jpg",
+      "image_1120": "examples/article6-1120.jpg",
+      "category": "Animals",
+      "badge": "Animals",
+      "badge_color": "green",
+      "title": "Why is your cat so aggresive? We found the answer!",
+      "text": "Pellentesque sit amet lacus quis diam consectetur posuere.",
+      "author": "Jessie Johannson"
+    },
+    {
+      "id": 13,
+      "image_560": "examples/article5-560.jpg",
+      "image_1120": "examples/article5-1120.jpg",
+      "category": "Energy",
+      "badge": "Energy",
+      "badge_color": "green",
+      "title": "The future of renewable energy sources",
+      "text": "Pellentesque sit amet lacus quis diam consectetur posuere.",
+      "author": "Ellie McNill"
+    },
+    {
+      "id": 14,
+      "image_560": "examples/article6-560.jpg",
+      "image_1120": "examples/article6-1120.jpg",
+      "category": "Moto",
+      "badge": "Gas and Oil",
+      "badge_color": "gray",
+      "title": "Will electric motorcycles take over?",
+      "text": "Pellentesque sit amet lacus quis diam consectetur posuere. Sed eget dui vitae diam sodales aliquet vitae quis ipsum. Nunc nisi risus, lobortis quis dui sed.",
+      "author": "Hannah Ford"
+    },
+    {
+      "id": 15,
+      "image_560": "examples/article6-560.jpg",
+      "image_1120": "examples/article6-1120.jpg",
+      "category": "Animals",
+      "badge": "Animals",
+      "badge_color": "green",
+      "title": "Why is your cat so aggresive? We found the answer!",
+      "text": "Pellentesque sit amet lacus quis diam consectetur posuere.",
+      "author": "Jessie Johannson"
+    },
+    {
+      "id": 16,
+      "image_560": "examples/article5-560.jpg",
+      "image_1120": "examples/article5-1120.jpg",
+      "category": "Energy",
+      "badge": "Energy",
+      "badge_color": "green",
+      "title": "The future of renewable energy sources",
+      "text": "Pellentesque sit amet lacus quis diam consectetur posuere.",
+      "author": "Ellie McNill"
+    },
+    {
+      "id": 17,
+      "image_560": "examples/article6-560.jpg",
+      "image_1120": "examples/article6-1120.jpg",
+      "category": "Moto",
+      "badge": "Gas and Oil",
+      "badge_color": "gray",
+      "title": "Will electric motorcycles take over?",
+      "text": "Pellentesque sit amet lacus quis diam consectetur posuere. Sed eget dui vitae diam sodales aliquet vitae quis ipsum. Nunc nisi risus, lobortis quis dui sed.",
+      "author": "Hannah Ford"
+    },
+    {
+      "id": 18,
+      "image_560": "examples/article6-560.jpg",
+      "image_1120": "examples/article6-1120.jpg",
+      "category": "Animals",
+      "badge": "Animals",
+      "badge_color": "green",
+      "title": "Why is your cat so aggresive? We found the answer!",
+      "text": "Pellentesque sit amet lacus quis diam consectetur posuere.",
+      "author": "Jessie Johannson"
+    },
+    {
+      "id": 19,
+      "image_560": "examples/article5-560.jpg",
+      "image_1120": "examples/article5-1120.jpg",
+      "category": "Energy",
+      "badge": "Energy",
+      "badge_color": "green",
+      "title": "The future of renewable energy sources",
+      "text": "Pellentesque sit amet lacus quis diam consectetur posuere.",
+      "author": "Ellie McNill"
+    },
+    {
+      "id": 20,
+      "image_560": "examples/article6-560.jpg",
+      "image_1120": "examples/article6-1120.jpg",
+      "category": "Moto",
+      "badge": "Gas and Oil",
+      "badge_color": "gray",
+      "title": "Will electric motorcycles take over?",
+      "text": "Pellentesque sit amet lacus quis diam consectetur posuere. Sed eget dui vitae diam sodales aliquet vitae quis ipsum. Nunc nisi risus, lobortis quis dui sed.",
+      "author": "Hannah Ford"
+    }
+  ],
+  "articles3": [
+    {
+      "id": 21,
+      "image_560": "examples/article6-560.jpg",
+      "image_1120": "examples/article6-1120.jpg",
+      "category": "Animals",
+      "badge": "Animals",
+      "badge_color": "green",
+      "title": "Why is your cat so aggresive? We found the answer!",
+      "text": "Pellentesque sit amet lacus quis diam consectetur posuere.",
+      "author": "Jessie Johannson"
+    },
+    {
+      "id": 22,
+      "image_560": "examples/article5-560.jpg",
+      "image_1120": "examples/article5-1120.jpg",
+      "category": "Energy",
+      "badge": "Energy",
+      "badge_color": "green",
+      "title": "The future of renewable energy sources",
+      "text": "Pellentesque sit amet lacus quis diam consectetur posuere.",
+      "author": "Ellie McNill"
+    },
+    {
+      "id": 23,
+      "image_560": "examples/article1-560.jpg",
+      "image_1120": "examples/article1-1120.jpg",
+      "category": "Politics",
+      "badge": "Gas and Oil",
+      "badge_color": "purple",
+      "title": "Trump's new social media company says users won't be censored",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida velit pharetra, tincidunt lorem et, cursus lacus. Cras lacinia arcu nec varius efficitur.",
+      "author": "John Freeman"
+    },
+    {
+      "id": 24,
+      "image_560": "examples/article6-560.jpg",
+      "image_1120": "examples/article6-1120.jpg",
+      "category": "Moto",
+      "badge": "Gas and Oil",
+      "badge_color": "gray",
+      "title": "Will electric motorcycles take over?",
+      "text": "Pellentesque sit amet lacus quis diam consectetur posuere. Sed eget dui vitae diam sodales aliquet vitae quis ipsum. Nunc nisi risus, lobortis quis dui sed.",
+      "author": "Hannah Ford"
+    },
+    {
+      "id": 25,
+      "image_560": "examples/article2-560.jpg",
+      "image_1120": "examples/article2-1120.jpg",
+      "category": "Economy",
+      "badge": "Music and Movies",
+      "badge_color": "red",
+      "title": "Oil prices as expensive as never before!",
+      "text": "",
+      "author": "Jerry Moll"
+    },
+    {
+      "id": 26,
+      "image_560": "examples/article6-560.jpg",
+      "image_1120": "examples/article6-1120.jpg",
+      "category": "Animals",
+      "badge": "Animals",
+      "badge_color": "green",
+      "title": "Why is your cat so aggresive? We found the answer!",
+      "text": "Pellentesque sit amet lacus quis diam consectetur posuere.",
+      "author": "Jessie Johannson"
+    },
+    {
+      "id": 27,
+      "image_560": "examples/article5-560.jpg",
+      "image_1120": "examples/article5-1120.jpg",
+      "category": "Energy",
+      "badge": "Energy",
+      "badge_color": "green",
+      "title": "The future of renewable energy sources",
+      "text": "Pellentesque sit amet lacus quis diam consectetur posuere.",
+      "author": "Ellie McNill"
+    },
+    {
+      "id": 28,
+      "image_560": "examples/article6-560.jpg",
+      "image_1120": "examples/article6-1120.jpg",
+      "category": "Moto",
+      "badge": "Gas and Oil",
+      "badge_color": "gray",
+      "title": "Will electric motorcycles take over?",
+      "text": "Pellentesque sit amet lacus quis diam consectetur posuere. Sed eget dui vitae diam sodales aliquet vitae quis ipsum. Nunc nisi risus, lobortis quis dui sed.",
+      "author": "Hannah Ford"
+    },
+    {
+      "id": 29,
+      "image_560": "examples/article6-560.jpg",
+      "image_1120": "examples/article6-1120.jpg",
+      "category": "Animals",
+      "badge": "Animals",
+      "badge_color": "green",
+      "title": "Why is your cat so aggresive? We found the answer!",
+      "text": "Pellentesque sit amet lacus quis diam consectetur posuere.",
+      "author": "Jessie Johannson"
+    },
+    {
+      "id": 30,
+      "image_560": "examples/article5-560.jpg",
+      "image_1120": "examples/article5-1120.jpg",
+      "category": "Energy",
+      "badge": "Energy",
+      "badge_color": "green",
+      "title": "The future of renewable energy sources",
+      "text": "Pellentesque sit amet lacus quis diam consectetur posuere.",
+      "author": "Ellie McNill"
+    },
+    {
+      "id": 31,
+      "image_560": "examples/article6-560.jpg",
+      "image_1120": "examples/article6-1120.jpg",
+      "category": "Moto",
+      "badge": "Gas and Oil",
+      "badge_color": "gray",
+      "title": "Will electric motorcycles take over?",
+      "text": "Pellentesque sit amet lacus quis diam consectetur posuere. Sed eget dui vitae diam sodales aliquet vitae quis ipsum. Nunc nisi risus, lobortis quis dui sed.",
+      "author": "Hannah Ford"
     }
   ]
 }
