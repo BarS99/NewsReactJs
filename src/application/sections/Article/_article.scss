@@ -54,11 +54,6 @@
     animation: spinning linear 1s;
     animation-iteration-count: infinite;
     animation-direction: forward;
-    display: none;
-  }
-
-  &--active &__spinner {
-    display: block;
   }
 }
 
