@@ -1,14 +1,12 @@
 import React from "react";
-import FooterCol from "./FooterCol";
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer text-center">
       <div className="container container--xl">
-        <div className="footer__col-list">
-          <FooterCol title="Contact">Test text</FooterCol>
+        <div className="footer__bar">
+          Bartłomiej Święch 2021 © All rights reserved!
         </div>
-        <div className="footer__bar"></div>
       </div>
     </footer>
   );
