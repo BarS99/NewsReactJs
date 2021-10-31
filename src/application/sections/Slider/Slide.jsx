@@ -2,9 +2,14 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 
-const Slide = () => {
+const Slide = (props) => {
   return (
-    <article className="slider__slide">
+    <article
+      data-index={props.index}
+      className={`slider__slide${
+        props.index === 0 ? " slider__slide--active" : ""
+      }`}
+    >
       <div className="slider__background">
         <picture>
           <source
@@ -17,23 +22,20 @@ const Slide = () => {
       </div>
       <div className="slider__content">
         <div className="container container--xl">
-          <div className="badge badge--secondary">Sport</div>
+          <div
+            className="badge"
+            style={{ backgroundColor: props.slide.badge_color }}
+          >
+            {props.slide.badge}
+          </div>
           <address className="author">
             <div className="author__icon">
               <FontAwesomeIcon icon={faUser} />
             </div>
-            <div className="author__name">Krzysztof Stanowski</div>
+            <div className="author__name">{props.slide.author}</div>
           </address>
-          <h2 className="slider__title">Robert Lewandowski's new record!</h2>
-          <div className="slider__text text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut
-            justo ligula. Interdum et malesuada fames ac ante ipsum primis in
-            faucibus. Duis eu sem in enim laoreet fermentum id ut lacus. Aenean
-            vel lorem sed quam porta aliquam. Vestibulum ut gravida orci.
-            Integer finibus ex laoreet quam iaculis, at placerat quam blandit.
-            Sed at magna magna. Etiam libero dolor, rhoncus ut quam vitae,
-            maximus scelerisque purus.
-          </div>
+          <h2 className="slider__title">{props.slide.title}</h2>
+          <div className="slider__text text">{props.slide.text}</div>
         </div>
       </div>
     </article>
