@@ -5,6 +5,7 @@
 .slider {
   position: relative;
   overflow: hidden;
+  touch-action: pan-y;
 
   &__track {
     position: relative;

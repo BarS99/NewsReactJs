@@ -40,7 +40,7 @@ const Slider = () => {
   ]);
 
   useEffect(() => {
-    const sliderHandler = new SliderHandler("slider");
+    const sliderHandler = new SliderHandler("slider", { autoplaySpeed: 6000 });
   }, []);
 
   return (
@@ -86,13 +86,27 @@ class SliderHandler {
     this.slides = this.init();
     this.pagination = this.slider.querySelectorAll(".slider__pagination-item");
     this.autoplay = this.props.autoplay ? this.startAutoplay() : null;
+    this.isMouseDown = false;
+    this.startMouseX = null;
 
     this.bindEvents();
   }
 
   bindEvents = () => {
+    this.slider.addEventListener("mousedown", this.handleMouseDown);
+    this.slider.addEventListener("mouseup", this.handleMouseUp);
+
+    this.slider.addEventListener("touchstart", this.handleMouseDown);
+    this.slider.addEventListener("touchend", this.handleMouseUp);
+    this.slider.addEventListener("touchmove", this.handleTouchMove);
+
+    this.slider.addEventListener("dragstart", this.handleDragStart);
+
     this.pagination.forEach((item, index) => {
       item.addEventListener("click", () => {
+        this.goToSlide(index);
+      });
+      item.addEventListener("touchstart", () => {
         this.goToSlide(index);
       });
     });
@@ -150,6 +164,50 @@ class SliderHandler {
 
       this.goToSlide(index);
     }, this.props.autoplaySpeed);
+  };
+
+  handleDragStart = (e) => {
+    e.preventDefault();
+  };
+
+  handleMouseDown = (e) => {
+    this.isMouseDown = true;
+    this.startMouseX = e.type.includes("touch")
+      ? e.touches[0].clientX
+      : e.clientX;
+  };
+
+  handleMouseUp = (e) => {
+    if (this.isMouseDown) {
+      if (e.cancelable) e.preventDefault();
+
+      let index = parseInt(
+        this.slider
+          .querySelector(".slider__slide--active")
+          .getAttribute("data-index")
+      );
+
+      const x = e.type.includes("touch")
+        ? e.changedTouches[0].clientX
+        : e.clientX;
+
+      if (x - this.startMouseX < 0 && Math.abs(x - this.startMouseX) > 100) {
+        if (index === 0) index = this.slides.length - 1;
+        else index = index - 1;
+
+        this.goToSlide(index);
+      } else if (
+        x - this.startMouseX > 0 &&
+        Math.abs(x - this.startMouseX) > 100
+      ) {
+        if (index === this.slides.length - 1) index = 0;
+        else index = index + 1;
+
+        this.goToSlide(index);
+      }
+
+      this.isMouseDown = false;
+    }
   };
 }
 

@@ -8,29 +8,31 @@ const ArticleSection = () => {
   const [loader, setLoader] = useState(true);
 
   function fetchArticles() {
-    if (paginator === false) return;
+    if (paginator === null) return;
     setLoader(() => true);
-    fetch(`${API}/articles${paginator}`)
-      .then((response) => {
-        if (response.ok) {
-          return response.json();
-        } else {
-          throw new Error("Failed to fetch the data!");
-        }
-      })
-      .then((response) => {
-        if (response.length === 0) {
-          setPaginator(() => false);
-          setLoader(() => false);
-        } else {
-          setTimeout(() => {
+
+    setTimeout(() => {
+      fetch(`${API}/articles${paginator}`)
+        .then((response) => {
+          if (response.ok) {
+            return response.json();
+          } else {
+            throw new Error("Failed to fetch the data!");
+          }
+        })
+        .then((response) => {
+          if (response.length === 0) {
+            setArticles((prevState) => [...prevState]);
+            setPaginator(() => false);
+          } else {
             setArticles((prevState) => [...prevState, ...response]);
             setPaginator((prevState) => prevState + 1);
-            setLoader(() => false);
-          }, 1500);
-        }
-      })
-      .catch((error) => console.log(error));
+          }
+
+          setLoader(() => false);
+        })
+        .catch((error) => console.log(error));
+    }, 1000);
   }
 
   useEffect(() => {
@@ -54,6 +56,11 @@ const ArticleSection = () => {
             <button className="btn btn-primary" onClick={fetchArticles}>
               Load More
             </button>
+          </div>
+        )}
+        {!paginator && (
+          <div className="alert alert--info mt-sm">
+            All articles have been loaded!
           </div>
         )}
       </div>

@@ -23,9 +23,15 @@
   padding: 0;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Lato", sans-serif;
   color: #333333;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 a {
@@ -293,6 +299,18 @@ ol {
   color: #fff;
   background-color: var(--color-secondary);
   border-color: var(--color-secondary);
+}
+
+.alert {
+  font-size: 1.25rem;
+  text-align: center;
+  padding: 0.75rem;
+  color: #fff;
+  background-color: var(--color-primary);
+  font-weight: 700;
+}
+.alert--info {
+  background-color: #17a2b8;
 }
 
 .article-section {
@@ -609,6 +627,7 @@ ol {
 .slider {
   position: relative;
   overflow: hidden;
+  touch-action: pan-y;
 }
 .slider__track {
   position: relative;
