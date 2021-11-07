@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import logo from "../../../static/icons/logo.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faArrowRight } from "@fortawesome/free-solid-svg-icons";
@@ -20,9 +21,9 @@ const Header = () => {
       <div className="container container--xl">
         <div className="header__inner">
           <div className="header__left">
-            <div className="header__logo">
+            <Link to="/" className="header__logo">
               <img src={logo} alt="logo" />
-            </div>
+            </Link>
           </div>
           <div className="header__right">
             <nav className="header__nav">
@@ -32,24 +33,24 @@ const Header = () => {
               </div>
               <ul>
                 <li>
-                  <a href="/" title="Home">
+                  <Link
+                    to="/"
+                    title="Home"
+                    className={window.location.pathname === "/" ? "active" : ""}
+                  >
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/" title="Home">
-                    Modules
-                  </a>
-                </li>
-                <li>
-                  <a href="/" title="Home">
-                    Posts
-                  </a>
-                </li>
-                <li>
-                  <a href="/" title="Home">
+                  <Link
+                    to="/contact"
+                    title="Home"
+                    className={
+                      window.location.pathname === "/contact" ? "active" : ""
+                    }
+                  >
                     Contact
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </nav>

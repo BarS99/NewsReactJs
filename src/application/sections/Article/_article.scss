@@ -59,10 +59,12 @@
 
 .article-box {
   display: block;
+  color: #000;
 
   &__inner {
     display: block;
     position: relative;
+    color: inherit;
   }
 
   .badge {

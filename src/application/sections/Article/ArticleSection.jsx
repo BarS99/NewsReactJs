@@ -7,42 +7,53 @@ const ArticleSection = () => {
   const [paginator, setPaginator] = useState(1);
   const [loader, setLoader] = useState(true);
 
-  function fetchArticles() {
-    if (paginator === null) return;
-    setLoader(() => true);
-
-    setTimeout(() => {
-      fetch(`${API}/articles${paginator}`)
-        .then((response) => {
-          if (response.ok) {
-            return response.json();
-          } else {
-            throw new Error("Failed to fetch the data!");
-          }
-        })
-        .then((response) => {
-          if (response.length === 0) {
-            setArticles((prevState) => [...prevState]);
-            setPaginator(() => false);
-          } else {
-            setArticles((prevState) => [...prevState, ...response]);
-            setPaginator((prevState) => prevState + 1);
-          }
-
-          setLoader(() => false);
-        })
-        .catch((error) => console.log(error));
-    }, 1000);
-  }
-
   useEffect(() => {
-    fetchArticles();
-  }, []);
+    const fetchArticles = (abortC) => {
+      if (paginator === null || paginator === false) return;
+
+      setLoader(() => true);
+
+      setTimeout(() => {
+        fetch(`${API}/articles${paginator}`, { signal: abortC.signal })
+          .then((response) => {
+            if (response.ok) {
+              return response.json();
+            } else {
+              throw new Error("Failed to fetch the data!");
+            }
+          })
+          .then((response) => {
+            if (response.length === 0) {
+              setArticles((prevState) => [...prevState]);
+              setPaginator(() => false);
+            } else {
+              setArticles((prevState) => [...prevState, ...response]);
+            }
+
+            setLoader(() => false);
+          })
+          .catch((error) => {
+            if (error.name === "AbortError") {
+            } else {
+              console.log(error.name);
+            }
+          });
+      }, 1000);
+    };
+
+    const abortC = new AbortController();
+
+    fetchArticles(abortC);
+
+    return () => {
+      abortC.abort();
+    };
+  }, [paginator]);
 
   return (
     <section className="article-section">
       <div className="container container--xl">
-        <h2 className="article-section__title">World</h2>
+        <h1 className="article-section__title">World</h1>
         <ArticleList articles={articles} />
         {loader ? (
           <div id="article-loader" className="article-loader">
@@ -52,8 +63,13 @@ const ArticleSection = () => {
           ""
         )}
         {paginator && !loader && (
-          <div className="text-center mt-md">
-            <button className="btn btn-primary" onClick={fetchArticles}>
+          <div className="text--center mt-md">
+            <button
+              className="btn btn-primary"
+              onClick={() => {
+                setPaginator((prevState) => prevState + 1);
+              }}
+            >
               Load More
             </button>
           </div>

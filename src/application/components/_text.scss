@@ -1,0 +1,51 @@
+@use "sass:map";
+
+@use "../utilities/variables" as variables;
+
+.text {
+  font-size: 0.875rem;
+  line-height: 1.8;
+  letter-spacing: 0.04em;
+
+  &--left {
+    text-align: left;
+  }
+
+  &--center {
+    text-align: center;
+  }
+
+  &--right {
+    text-align: right;
+  }
+
+  &--justify {
+    text-align: justify;
+  }
+
+  &__title {
+    font-size: 1.625rem;
+    font-weight: 700;
+
+    @media screen and (min-width: map.get(variables.$breakpoints, "md")) {
+      font-size: 2rem;
+    }
+
+    @media screen and (min-width: map.get(variables.$breakpoints, "lg")) {
+      font-size: 2.5rem;
+    }
+  }
+
+  @media screen and (min-width: map.get(variables.$breakpoints, "sm")) {
+    &--cols {
+      column-gap: 3em;
+      columns: 2 auto;
+    }
+  }
+
+  @media screen and (min-width: map.get(variables.$breakpoints, "xl")) {
+    &--cols {
+      columns: 3 auto;
+    }
+  }
+}

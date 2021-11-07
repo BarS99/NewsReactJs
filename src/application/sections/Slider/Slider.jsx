@@ -2,12 +2,13 @@ import React, { useState, useEffect } from "react";
 import Slide from "./Slide";
 
 const Slider = () => {
-  const [slides, setSlides] = useState([
+  const [slides] = useState([
     {
       image_480: "examples/lewandowski-480.jpg",
       image_720: "examples/lewandowski-720.jpg",
       image_960: "examples/lewandowski-960.jpg",
       image_1440: "examples/lewandowski-1440.jpg",
+      image_1920: "examples/lewandowski-1920.jpg",
       badge: "Sport",
       badge_color: "green",
       author: "Krzysztof Stanowski",
@@ -21,26 +22,23 @@ const Slider = () => {
       maximus scelerisque purus.`,
     },
     {
-      image_480: "examples/lewandowski-480.jpg",
-      image_720: "examples/lewandowski-720.jpg",
-      image_960: "examples/lewandowski-960.jpg",
-      image_1440: "examples/lewandowski-1440.jpg",
-      badge: "Sport",
-      badge_color: "green",
-      author: "Krzysztof Stanowski",
-      title: "Robert Lewandowski's new record 2!",
+      image_480: "examples/screen-480.jpg",
+      image_720: "examples/screen-720.jpg",
+      image_960: "examples/screen-960.jpg",
+      image_1440: "examples/screen-1440.jpg",
+      image_1920: "examples/screen-1920.jpg",
+      badge: "Technology",
+      badge_color: "blue",
+      author: "Bjarne Stroustrup",
+      title: "Most popular programming languages of 2021",
       text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut
       justo ligula. Interdum et malesuada fames ac ante ipsum primis in
-      faucibus. Duis eu sem in enim laoreet fermentum id ut lacus. Aenean
-      vel lorem sed quam porta aliquam. Vestibulum ut gravida orci.
-      Integer finibus ex laoreet quam iaculis, at placerat quam blandit.
-      Sed at magna magna. Etiam libero dolor, rhoncus ut quam vitae,
-      maximus scelerisque purus.`,
+      faucibus.`,
     },
   ]);
 
   useEffect(() => {
-    const sliderHandler = new SliderHandler("slider", { autoplaySpeed: 6000 });
+    new SliderHandler("slider", { autoplaySpeed: 6000 });
   }, []);
 
   return (
@@ -55,12 +53,14 @@ const Slider = () => {
           <div className="slider__pagination">
             {slides.map((slide, index) => {
               return (
-                <div
+                <button
                   key={index}
                   className={`slider__pagination-item${
                     index === 0 ? " slider__pagination-item--active" : ""
                   }`}
-                ></div>
+                >
+                  {`slide number ${index}`}
+                </button>
               );
             })}
           </div>
@@ -82,7 +82,6 @@ class SliderHandler {
       ...props,
     };
 
-    this.track = this.slider.querySelector(".slider__track");
     this.slides = this.init();
     this.pagination = this.slider.querySelectorAll(".slider__pagination-item");
     this.autoplay = this.props.autoplay ? this.startAutoplay() : null;

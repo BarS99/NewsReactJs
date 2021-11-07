@@ -5,8 +5,9 @@
 .header {
   padding: var(--space-sm) 0;
   z-index: 1000;
-  position: relative;
   background-color: hsl(0, 0%, 20%);
+  position: sticky;
+  top: 0;
 
   &__inner {
     display: flex;
@@ -20,6 +21,7 @@
 
   &__logo {
     height: 3em;
+    display: block;
   }
 
   &__logo img {
@@ -36,6 +38,12 @@
     width: 1.5em;
     height: 1.5em;
     color: #fff;
+  }
+
+  &__nav {
+    a.active {
+      text-decoration: underline;
+    }
   }
 
   @media screen and (max-width: calc(map.get(variables.$breakpoints, "md") - 1px)) {
@@ -157,9 +165,5 @@
       background-color: var(--color-primary);
       color: hsl(0, 0%, 100%);
     }
-  }
-
-  @media screen and (min-width: map.get(variables.$breakpoints, "xl")) {
-    margin-bottom: var(--space-sm);
   }
 }

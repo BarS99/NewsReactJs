@@ -86,6 +86,8 @@
     background-color: var(--color-secondary);
     transition: background-color 0.2s, border-color 0.2s;
     cursor: pointer;
+    font-size: 0;
+    border-radius: 0;
 
     & + & {
       margin-left: 1rem;
@@ -123,5 +125,9 @@
     .slider__text {
       font-size: 1rem;
     }
+  }
+
+  @media screen and (min-width: map.get(variables.$breakpoints, "xl")) {
+    margin-top: var(--space-sm);
   }
 }
