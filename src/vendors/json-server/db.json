@@ -9,7 +9,9 @@
       "badge_color": "purple",
       "title": "Trump's new social media company says users won't be censored",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida velit pharetra, tincidunt lorem et, cursus lacus. Cras lacinia arcu nec varius efficitur.",
-      "author": "John Freeman"
+      "text_view": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit laoreet maximus. Quisque porttitor lacus id consequat iaculis. Nunc eget scelerisque lectus. Fusce eget turpis pellentesque, pellentesque ligula ut, accumsan eros. Donec ullamcorper sapien nec magna elementum, sit amet egestas turpis condimentum. Aliquam feugiat blandit eleifend. Curabitur maximus massa sed interdum aliquam. In vel faucibus libero. Vestibulum laoreet ut tellus nec fringilla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque tempus blandit quam, quis venenatis libero lacinia sed. Sed luctus urna ut ex molestie ultrices. Etiam id ante fringilla, sagittis est eget, commodo nisl. Vivamus congue sapien elit, malesuada hendrerit justo euismod in. Praesent sagittis urna metus, sit amet tristique quam rhoncus et. Donec nisi mi, efficitur vel malesuada ac, venenatis nec ligula. Quisque sapien lacus, semper pharetra viverra in, consequat lacinia ante. Duis dignissim lacus at sapien porttitor, sit amet tincidunt arcu dapibus. Fusce tincidunt gravida magna at vehicula. Maecenas dapibus aliquet orci id pulvinar. Nam augue justo, tincidunt rutrum quam vitae, feugiat malesuada turpis. Proin finibus ultrices nunc faucibus gravida. Nunc ut condimentum nunc, ac faucibus nulla. Integer nec diam vestibulum, auctor turpis vitae, tempus tortor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi ac augue eu ex tincidunt consectetur sed a lacus. Vestibulum rhoncus erat a lectus dapibus, ut elementum lorem imperdiet. Sed pretium lacus viverra odio elementum consequat. Nulla eu neque turpis. Cras a metus feugiat, venenatis velit sit amet, rhoncus eros. Duis faucibus arcu nec tempus molestie. Proin et viverra elit, sit amet euismod mi. Maecenas egestas nisl a felis euismod, at maximus ex dapibus. Aenean a nisi massa. Nullam id elit fermentum, eleifend lectus quis, eleifend leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ante massa. Quisque libero odio, dapibus vitae maximus eget, vulputate eu lacus. Curabitur porttitor, enim ac pellentesque congue, elit ipsum hendrerit velit, accumsan consectetur mi arcu volutpat nisl. Pellentesque mauris quam, mattis id accumsan a, imperdiet ac lectus. Quisque sit amet elit aliquet, condimentum metus a, feugiat nunc. Aenean vel justo ullamcorper, pulvinar ipsum id, ornare sem. Quisque mollis nibh et dolor sodales volutpat. Sed fermentum at tellus nec pretium. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc vitae augue sodales, finibus eros id, tempor nunc. Etiam dignissim vulputate est at maximus. Nulla eu magna sapien. In placerat ornare erat sit amet varius. Aliquam quis felis lobortis, tristique magna sit amet, lacinia massa. Pellentesque fringilla augue sed turpis eleifend, eu venenatis velit commodo. Aliquam erat volutpat. Curabitur turpis ipsum, iaculis non ante et, tempus laoreet est. Nam consectetur sem nec massa egestas ullamcorper. Fusce id posuere lacus. Phasellus lacus tortor, eleifend eu tortor eget, ultricies posuere arcu. Proin condimentum augue sit amet ornare lobortis. Fusce gravida ut dui non dignissim. Suspendisse nec augue dapibus, dapibus eros nec, vulputate est. Nunc non placerat augue. Aenean finibus quam sed nulla placerat, vitae feugiat arcu volutpat. Nam lobortis tincidunt lacinia. Maecenas consequat lorem vitae arcu facilisis, id pellentesque turpis eleifend. Sed turpis erat, aliquam quis massa quis, pharetra placerat lectus. Duis congue, nisi non tristique rutrum, erat dui aliquam felis, in consectetur enim nisl sed nisl.",
+      "author": "John Freeman",
+      "date": "12/11/2021"
     },
     {
       "id": 2,
@@ -20,7 +22,9 @@
       "badge_color": "red",
       "title": "Oil prices as expensive as never before!",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida velit pharetra, tincidunt lorem et, cursus lacus. Cras lacinia arcu nec varius efficitur.",
-      "author": "Jerry Moll"
+      "text_view": "",
+      "author": "Jerry Moll",
+      "date": "12/11/2021"
     },
     {
       "id": 3,
@@ -31,7 +35,9 @@
       "badge_color": "orange",
       "title": "Is World War III on horizon?",
       "text": "",
-      "author": "Anna Calleb"
+      "text_view": "",
+      "author": "Anna Calleb",
+      "date": "12/11/2021"
     },
     {
       "id": 4,
@@ -42,7 +48,9 @@
       "badge_color": "purple",
       "title": "Trump's new social media company says users won't be censored",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida velit pharetra, tincidunt lorem et, cursus lacus. Cras lacinia arcu nec varius efficitur.",
-      "author": "John Freeman"
+      "text_view": "",
+      "author": "John Freeman",
+      "date": "12/11/2021"
     },
     {
       "id": 5,
@@ -53,7 +61,9 @@
       "badge_color": "red",
       "title": "Oil prices as expensive as never before!",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida velit pharetra, tincidunt lorem et, cursus lacus. Cras lacinia arcu nec varius efficitur.",
-      "author": "Jerry Moll"
+      "text_view": "",
+      "author": "Jerry Moll",
+      "date": "12/11/2021"
     },
     {
       "id": 6,
@@ -64,7 +74,9 @@
       "badge_color": "orange",
       "title": "Is World War III on horizon?",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida velit pharetra, tincidunt lorem et, cursus lacus. Cras lacinia arcu nec varius efficitur.",
-      "author": "Anna Calleb"
+      "text_view": "",
+      "author": "Anna Calleb",
+      "date": "12/11/2021"
     },
     {
       "id": 7,
@@ -75,7 +87,9 @@
       "badge_color": "purple",
       "title": "Trump's new social media company says users won't be censored",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida velit pharetra, tincidunt lorem et, cursus lacus. Cras lacinia arcu nec varius efficitur.",
-      "author": "John Freeman"
+      "text_view": "",
+      "author": "John Freeman",
+      "date": "12/11/2021"
     },
     {
       "id": 8,
@@ -86,7 +100,9 @@
       "badge_color": "red",
       "title": "Oil prices as expensive as never before!",
       "text": "",
-      "author": "Jerry Moll"
+      "text_view": "",
+      "author": "Jerry Moll",
+      "date": "12/11/2021"
     },
     {
       "id": 9,
@@ -97,7 +113,9 @@
       "badge_color": "orange",
       "title": "Is World War III on horizon?",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida velit pharetra, tincidunt lorem et, cursus lacus. Cras lacinia arcu nec varius efficitur.",
-      "author": "Anna Calleb"
+      "text_view": "",
+      "author": "Anna Calleb",
+      "date": "12/11/2021"
     },
     {
       "id": 10,
@@ -108,7 +126,9 @@
       "badge_color": "purple",
       "title": "Trump's new social media company says users won't be censored",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida velit pharetra, tincidunt lorem et, cursus lacus. Cras lacinia arcu nec varius efficitur.",
-      "author": "John Freeman"
+      "text_view": "",
+      "author": "John Freeman",
+      "date": "12/11/2021"
     },
     {
       "id": 11,
@@ -119,7 +139,9 @@
       "badge_color": "red",
       "title": "Oil prices as expensive as never before!",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida velit pharetra, tincidunt lorem et, cursus lacus. Cras lacinia arcu nec varius efficitur.",
-      "author": "Jerry Moll"
+      "text_view": "",
+      "author": "Jerry Moll",
+      "date": "12/11/2021"
     }
   ],
   "articles2": [
@@ -132,7 +154,9 @@
       "badge_color": "green",
       "title": "Why is your cat so aggresive? We found the answer!",
       "text": "Pellentesque sit amet lacus quis diam consectetur posuere.",
-      "author": "Jessie Johannson"
+      "text_view": "",
+      "author": "Jessie Johannson",
+      "date": "11/11/2021"
     },
     {
       "id": 13,
@@ -143,7 +167,9 @@
       "badge_color": "green",
       "title": "The future of renewable energy sources",
       "text": "Pellentesque sit amet lacus quis diam consectetur posuere.",
-      "author": "Ellie McNill"
+      "text_view": "",
+      "author": "Ellie McNill",
+      "date": "11/11/2021"
     },
     {
       "id": 14,
@@ -154,7 +180,9 @@
       "badge_color": "gray",
       "title": "Will electric motorcycles take over?",
       "text": "Pellentesque sit amet lacus quis diam consectetur posuere. Sed eget dui vitae diam sodales aliquet vitae quis ipsum. Nunc nisi risus, lobortis quis dui sed.",
-      "author": "Hannah Ford"
+      "text_view": "",
+      "author": "Hannah Ford",
+      "date": "11/11/2021"
     },
     {
       "id": 15,
@@ -165,7 +193,9 @@
       "badge_color": "green",
       "title": "Why is your cat so aggresive? We found the answer!",
       "text": "Pellentesque sit amet lacus quis diam consectetur posuere.",
-      "author": "Jessie Johannson"
+      "text_view": "",
+      "author": "Jessie Johannson",
+      "date": "11/11/2021"
     },
     {
       "id": 16,
@@ -176,7 +206,9 @@
       "badge_color": "green",
       "title": "The future of renewable energy sources",
       "text": "Pellentesque sit amet lacus quis diam consectetur posuere.",
-      "author": "Ellie McNill"
+      "text_view": "",
+      "author": "Ellie McNill",
+      "date": "11/11/2021"
     },
     {
       "id": 17,
@@ -187,7 +219,9 @@
       "badge_color": "gray",
       "title": "Will electric motorcycles take over?",
       "text": "Pellentesque sit amet lacus quis diam consectetur posuere. Sed eget dui vitae diam sodales aliquet vitae quis ipsum. Nunc nisi risus, lobortis quis dui sed.",
-      "author": "Hannah Ford"
+      "text_view": "",
+      "author": "Hannah Ford",
+      "date": "11/11/2021"
     },
     {
       "id": 18,
@@ -198,7 +232,9 @@
       "badge_color": "green",
       "title": "Why is your cat so aggresive? We found the answer!",
       "text": "Pellentesque sit amet lacus quis diam consectetur posuere.",
-      "author": "Jessie Johannson"
+      "text_view": "",
+      "author": "Jessie Johannson",
+      "date": "11/11/2021"
     },
     {
       "id": 19,
@@ -209,7 +245,9 @@
       "badge_color": "green",
       "title": "The future of renewable energy sources",
       "text": "Pellentesque sit amet lacus quis diam consectetur posuere.",
-      "author": "Ellie McNill"
+      "text_view": "",
+      "author": "Ellie McNill",
+      "date": "11/11/2021"
     },
     {
       "id": 20,
@@ -220,7 +258,9 @@
       "badge_color": "gray",
       "title": "Will electric motorcycles take over?",
       "text": "Pellentesque sit amet lacus quis diam consectetur posuere. Sed eget dui vitae diam sodales aliquet vitae quis ipsum. Nunc nisi risus, lobortis quis dui sed.",
-      "author": "Hannah Ford"
+      "text_view": "",
+      "author": "Hannah Ford",
+      "date": "11/11/2021"
     }
   ],
   "articles3": [
@@ -233,7 +273,9 @@
       "badge_color": "green",
       "title": "Why is your cat so aggresive? We found the answer!",
       "text": "Pellentesque sit amet lacus quis diam consectetur posuere.",
-      "author": "Jessie Johannson"
+      "text_view": "",
+      "author": "Jessie Johannson",
+      "date": "11/11/2021"
     },
     {
       "id": 22,
@@ -244,7 +286,9 @@
       "badge_color": "green",
       "title": "The future of renewable energy sources",
       "text": "Pellentesque sit amet lacus quis diam consectetur posuere.",
-      "author": "Ellie McNill"
+      "text_view": "",
+      "author": "Ellie McNill",
+      "date": "11/11/2021"
     },
     {
       "id": 23,
@@ -255,7 +299,9 @@
       "badge_color": "purple",
       "title": "Trump's new social media company says users won't be censored",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida velit pharetra, tincidunt lorem et, cursus lacus. Cras lacinia arcu nec varius efficitur.",
-      "author": "John Freeman"
+      "text_view": "",
+      "author": "John Freeman",
+      "date": "11/11/2021"
     },
     {
       "id": 24,
@@ -266,7 +312,9 @@
       "badge_color": "gray",
       "title": "Will electric motorcycles take over?",
       "text": "Pellentesque sit amet lacus quis diam consectetur posuere. Sed eget dui vitae diam sodales aliquet vitae quis ipsum. Nunc nisi risus, lobortis quis dui sed.",
-      "author": "Hannah Ford"
+      "text_view": "",
+      "author": "Hannah Ford",
+      "date": "11/11/2021"
     },
     {
       "id": 25,
@@ -277,7 +325,9 @@
       "badge_color": "red",
       "title": "Oil prices as expensive as never before!",
       "text": "",
-      "author": "Jerry Moll"
+      "text_view": "",
+      "author": "Jerry Moll",
+      "date": "11/11/2021"
     },
     {
       "id": 26,
@@ -288,7 +338,9 @@
       "badge_color": "green",
       "title": "Why is your cat so aggresive? We found the answer!",
       "text": "Pellentesque sit amet lacus quis diam consectetur posuere.",
-      "author": "Jessie Johannson"
+      "text_view": "",
+      "author": "Jessie Johannson",
+      "date": "11/11/2021"
     },
     {
       "id": 27,
@@ -299,7 +351,9 @@
       "badge_color": "green",
       "title": "The future of renewable energy sources",
       "text": "Pellentesque sit amet lacus quis diam consectetur posuere.",
-      "author": "Ellie McNill"
+      "text_view": "",
+      "author": "Ellie McNill",
+      "date": "11/11/2021"
     },
     {
       "id": 28,
@@ -310,7 +364,9 @@
       "badge_color": "gray",
       "title": "Will electric motorcycles take over?",
       "text": "Pellentesque sit amet lacus quis diam consectetur posuere. Sed eget dui vitae diam sodales aliquet vitae quis ipsum. Nunc nisi risus, lobortis quis dui sed.",
-      "author": "Hannah Ford"
+      "text_view": "",
+      "author": "Hannah Ford",
+      "date": "11/11/2021"
     },
     {
       "id": 29,
@@ -321,7 +377,9 @@
       "badge_color": "green",
       "title": "Why is your cat so aggresive? We found the answer!",
       "text": "Pellentesque sit amet lacus quis diam consectetur posuere.",
-      "author": "Jessie Johannson"
+      "text_view": "",
+      "author": "Jessie Johannson",
+      "date": "11/11/2021"
     },
     {
       "id": 30,
@@ -332,7 +390,9 @@
       "badge_color": "green",
       "title": "The future of renewable energy sources",
       "text": "Pellentesque sit amet lacus quis diam consectetur posuere.",
-      "author": "Ellie McNill"
+      "text_view": "",
+      "author": "Ellie McNill",
+      "date": "11/11/2021"
     },
     {
       "id": 31,
@@ -343,7 +403,9 @@
       "badge_color": "gray",
       "title": "Will electric motorcycles take over?",
       "text": "Pellentesque sit amet lacus quis diam consectetur posuere. Sed eget dui vitae diam sodales aliquet vitae quis ipsum. Nunc nisi risus, lobortis quis dui sed.",
-      "author": "Hannah Ford"
+      "text_view": "",
+      "author": "Hannah Ford",
+      "date": "11/11/2021"
     }
   ],
   "articles4": []

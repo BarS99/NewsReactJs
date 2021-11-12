@@ -1,4 +1,5 @@
 import React from "react";
+import { Outlet } from "react-router-dom";
 import Header from "../../sections/Header/Header";
 import Footer from "../../sections/Footer/Footer";
 
@@ -6,7 +7,9 @@ const LayoutMain = (props) => {
   return (
     <>
       <Header />
-      <div className="layout">{props.children}</div>
+      <div className="layout">
+        <Outlet />
+      </div>
       <Footer />
     </>
   );

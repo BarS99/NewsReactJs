@@ -12,7 +12,7 @@ const Contact = () => {
           <source
             srcSet={`examples/contact-480.jpg 480w, examples/contact-720.jpg 720w`}
           />
-          <img src="examples/contact-1920.jpg" alt="Contact image" />
+          <img src="examples/contact-1920.jpg" alt="Contact" />
         </picture>
         <h1 className="text__title text__title--h1 mb-md mt-md">Contact</h1>
         <div className="text text--justify text--cols">

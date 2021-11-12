@@ -27,7 +27,14 @@ const ArticleSection = () => {
               setArticles((prevState) => [...prevState]);
               setPaginator(() => false);
             } else {
-              setArticles((prevState) => [...prevState, ...response]);
+              setArticles((prevState) => [
+                ...prevState,
+                ...response.map((item) => {
+                  item.paginator = paginator;
+
+                  return item;
+                }),
+              ]);
             }
 
             setLoader(() => false);

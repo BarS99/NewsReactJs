@@ -20,6 +20,7 @@ const Slider = () => {
       Integer finibus ex laoreet quam iaculis, at placerat quam blandit.
       Sed at magna magna. Etiam libero dolor, rhoncus ut quam vitae,
       maximus scelerisque purus.`,
+      date: "12/11/2021",
     },
     {
       image_480: "examples/screen-480.jpg",
@@ -34,6 +35,7 @@ const Slider = () => {
       text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut
       justo ligula. Interdum et malesuada fames ac ante ipsum primis in
       faucibus.`,
+      date: "06/11/2021",
     },
   ]);
 

@@ -5,6 +5,7 @@ import Contact from "./application/sections/Contact/Contact";
 import Slider from "./application/sections/Slider/Slider";
 import ArticleSection from "./application/sections/Article/ArticleSection";
 import ArticleView from "./application/sections/Article/ArticleView";
+import Page404 from "./application/sections/Page404/Page404";
 
 import "./application/styles.css";
 import "./vendors/normalize/normalize.css";
@@ -13,46 +14,20 @@ const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route
-          exact
-          path="/"
-          element={
-            <LayoutMain>
-              <Slider />
-              <ArticleSection />
-            </LayoutMain>
-          }
-        ></Route>
-        <Route
-          exact
-          path="/contact"
-          element={
-            <LayoutMain>
-              <Contact />
-            </LayoutMain>
-          }
-        ></Route>
-        <Route
-          exact
-          path="/article/:id"
-          element={
-            <LayoutMain>
-              <ArticleView />
-            </LayoutMain>
-          }
-        ></Route>
-        <Route
-          path="*"
-          element={
-            <LayoutMain>
-              <div className="container container--lg">
-                <h1 className="text__title text--center mt-md mb-md">
-                  404 page not found
-                </h1>
-              </div>
-            </LayoutMain>
-          }
-        ></Route>
+        <Route path="/" element={<LayoutMain />}>
+          <Route
+            path=""
+            element={
+              <>
+                <Slider />
+                <ArticleSection />
+              </>
+            }
+          />
+          <Route path="article/:id-:paginator" element={<ArticleView />} />
+          <Route path="/contact" element={<Contact />}></Route>
+          <Route path="*" element={<Page404 />}></Route>
+        </Route>
       </Routes>
     </BrowserRouter>
   );

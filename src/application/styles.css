@@ -30,7 +30,6 @@ html {
 body {
   font-family: "Lato", sans-serif;
   color: #333333;
-  width: 100vw;
 }
 
 .layout {
@@ -251,6 +250,15 @@ ol {
 }
 .author__icon {
   margin-right: 0.5em;
+}
+
+.date {
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+}
+.date__icon {
+  margin-right: 0.5rem;
 }
 
 .badge {
@@ -544,6 +552,39 @@ ol {
   }
 }
 
+.article-view__image {
+  margin-bottom: var(--space-sm);
+}
+.article-view__image img {
+  display: block;
+  max-width: 100%;
+}
+.article-view .badge {
+  margin-bottom: 1rem;
+}
+.article-view .author {
+  margin-bottom: 0.5rem;
+}
+.article-view__title {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .article-view__image {
+    margin-right: var(--space-sm);
+    margin-bottom: 0.5rem;
+    max-width: 50%;
+    float: left;
+  }
+  .article-view .badge {
+    margin-top: 2rem;
+  }
+  .article-view__title {
+    font-size: 1.5rem;
+  }
+}
+
 .header {
   padding: var(--space-sm) 0;
   z-index: 1000;
@@ -706,6 +747,9 @@ ol {
 }
 .slider .author {
   margin-bottom: 0.5rem;
+}
+.slider .date {
+  margin-bottom: 1rem;
 }
 .slider__slide {
   position: relative;

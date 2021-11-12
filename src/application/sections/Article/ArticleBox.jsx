@@ -11,7 +11,7 @@ const ArticleBox = (props) => {
       }`}
     >
       <Link
-        to={`/article/${props.article.id}`}
+        to={`/article/${props.article.id}-${props.article.paginator}`}
         title={props.article.title}
         className="article-box__inner"
       >

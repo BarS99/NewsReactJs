@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser } from "@fortawesome/free-solid-svg-icons";
+import { faUser, faClock } from "@fortawesome/free-solid-svg-icons";
+import { dateParser } from "../../../static/definitions";
 
 const Slide = (props) => {
   return (
@@ -24,6 +25,12 @@ const Slide = (props) => {
       </div>
       <div className="slider__content">
         <div className="container container--xl">
+          <time data-time={dateParser(props.slide.date)} className="date">
+            <div className="date__icon">
+              <FontAwesomeIcon icon={faClock} aria-hidden="true" />
+            </div>
+            <div className="date__caption">{props.slide.date}</div>
+          </time>
           <div
             className="badge"
             style={{ backgroundColor: props.slide.badge_color }}
