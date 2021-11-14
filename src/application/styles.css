@@ -255,7 +255,8 @@ ol {
 .date {
   display: flex;
   align-items: center;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
+  font-weight: 300;
 }
 .date__icon {
   margin-right: 0.5rem;
@@ -450,6 +451,9 @@ ol {
   position: relative;
   color: inherit;
 }
+.article-box .date {
+  margin-bottom: 1rem;
+}
 .article-box .badge {
   position: absolute;
   top: 0.5rem;
@@ -559,6 +563,9 @@ ol {
   display: block;
   max-width: 100%;
 }
+.article-view .date {
+  margin-bottom: 1rem;
+}
 .article-view .badge {
   margin-bottom: 1rem;
 }
@@ -577,8 +584,8 @@ ol {
     max-width: 50%;
     float: left;
   }
-  .article-view .badge {
-    margin-top: 2rem;
+  .article-view .date {
+    padding-top: 2rem;
   }
   .article-view__title {
     font-size: 1.5rem;
@@ -736,6 +743,7 @@ ol {
   position: relative;
   overflow: hidden;
   touch-action: pan-y;
+  user-select: none;
 }
 .slider__track {
   position: relative;
@@ -816,28 +824,31 @@ ol {
   .slider__title {
     font-size: 1.75rem;
   }
-  .slider .slider__text {
+  .slider__text {
     display: block;
     margin-top: 0.5rem;
   }
 }
 @media screen and (min-width: 992px) {
-  .slider .slider__content {
+  .slider__content {
     padding-bottom: 4rem;
   }
-  .slider .slider__pagination {
+  .slider__pagination {
     bottom: 2em;
   }
   .slider__title {
     font-size: 2rem;
   }
-  .slider .slider__text {
+  .slider__text {
     font-size: 1rem;
   }
 }
 @media screen and (min-width: 1200px) {
   .slider {
     margin-top: var(--space-sm);
+  }
+  .slider__pagination-item:not(.slider__pagination-item--active):hover {
+    background-color: #fff;
   }
 }
 

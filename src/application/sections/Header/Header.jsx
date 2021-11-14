@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logo from "../../../static/icons/logo.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faArrowRight } from "@fortawesome/free-solid-svg-icons";
@@ -21,9 +21,9 @@ const Header = () => {
       <div className="container container--xl">
         <div className="header__inner">
           <div className="header__left">
-            <Link to="/" className="header__logo">
+            <NavLink to="/" className="header__logo">
               <img src={logo} alt="logo" />
-            </Link>
+            </NavLink>
           </div>
           <div className="header__right">
             <nav className="header__nav">
@@ -33,24 +33,26 @@ const Header = () => {
               </div>
               <ul>
                 <li>
-                  <Link
+                  <NavLink
                     to="/"
                     title="Home"
-                    className={window.location.pathname === "/" ? "active" : ""}
+                    onClick={() => {
+                      setToggleNav((prevState) => false);
+                    }}
                   >
                     Home
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link
+                  <NavLink
                     to="/contact"
                     title="Home"
-                    className={
-                      window.location.pathname === "/contact" ? "active" : ""
-                    }
+                    onClick={() => {
+                      setToggleNav((prevState) => false);
+                    }}
                   >
                     Contact
-                  </Link>
+                  </NavLink>
                 </li>
               </ul>
             </nav>

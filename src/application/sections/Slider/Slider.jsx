@@ -72,6 +72,13 @@ const Slider = () => {
   );
 };
 
+/**
+ * @param {string} id id of element without #
+ * @param {object} props properties of element
+ * @param {boolean} props.autoplay enable autoplay
+ * @param {autoplaySPeed} props.autoplaySpeed autoplay speed in miliseconds
+ * @param {transition} props.transition transition duration of the animation between slides in miliseconds
+ */
 class SliderHandler {
   constructor(id = null, props = {}) {
     this.slider = document.getElementById(id);
@@ -99,7 +106,6 @@ class SliderHandler {
 
     this.slider.addEventListener("touchstart", this.handleMouseDown);
     this.slider.addEventListener("touchend", this.handleMouseUp);
-    this.slider.addEventListener("touchmove", this.handleTouchMove);
 
     this.slider.addEventListener("dragstart", this.handleDragStart);
 

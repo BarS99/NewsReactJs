@@ -3,8 +3,8 @@
 @use "./general";
 
 @use "./components/container";
-@use "./components/author";
-@use "./components/date";
+@use "./components/Author/author";
+@use "./components/Date/date";
 @use "./components/badge";
 @use "./components/button";
 @use "./components/alert";

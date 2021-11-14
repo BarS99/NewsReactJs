@@ -2,8 +2,8 @@ import React from "react";
 import { useEffect, useState } from "react";
 import { useMatch, useNavigate } from "react-router";
 import { API } from "../../../static/definitions";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser } from "@fortawesome/free-solid-svg-icons";
+import Date from "../../components/Date/Date";
+import Author from "../../components/Author/Author";
 
 const ArticleView = () => {
   const { params } = useMatch("article/:id-:paginator");
@@ -56,18 +56,14 @@ const ArticleView = () => {
               alt={article.title}
             />
           </div>
+          <Date date={article.date} />
           <div
             className="badge"
             style={{ backgroundColor: article.badge_color }}
           >
             {article.badge}
           </div>
-          <address className="author">
-            <div className="author__icon">
-              <FontAwesomeIcon icon={faUser} aria-hidden="true" />
-            </div>
-            <div className="author__name">{article.author}</div>
-          </address>
+          <Author author={article.author} />
           <h1 className="article-view__title">{article.title}</h1>
           {article.text_view.length && (
             <div className="article-view__text text">{article.text_view}</div>

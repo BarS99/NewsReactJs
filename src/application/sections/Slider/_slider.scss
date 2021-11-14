@@ -6,6 +6,7 @@
   position: relative;
   overflow: hidden;
   touch-action: pan-y;
+  user-select: none;
 
   &__track {
     position: relative;
@@ -107,18 +108,18 @@
       font-size: 1.75rem;
     }
 
-    .slider__text {
+    &__text {
       display: block;
       margin-top: 0.5rem;
     }
   }
 
   @media screen and (min-width: map.get(variables.$breakpoints, "lg")) {
-    .slider__content {
+    &__content {
       padding-bottom: 4rem;
     }
 
-    .slider__pagination {
+    &__pagination {
       bottom: 2em;
     }
 
@@ -126,12 +127,16 @@
       font-size: 2rem;
     }
 
-    .slider__text {
+    &__text {
       font-size: 1rem;
     }
   }
 
   @media screen and (min-width: map.get(variables.$breakpoints, "xl")) {
     margin-top: var(--space-sm);
+
+    &__pagination-item:not(&__pagination-item--active):hover {
+      background-color: #fff;
+    }
   }
 }

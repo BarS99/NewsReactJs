@@ -25,8 +25,8 @@ const App = () => {
             }
           />
           <Route path="article/:id-:paginator" element={<ArticleView />} />
-          <Route path="/contact" element={<Contact />}></Route>
-          <Route path="*" element={<Page404 />}></Route>
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<Page404 />} />
         </Route>
       </Routes>
     </BrowserRouter>

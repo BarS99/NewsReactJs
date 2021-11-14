@@ -67,6 +67,10 @@
     color: inherit;
   }
 
+  .date {
+    margin-bottom: 1rem;
+  }
+
   .badge {
     position: absolute;
     top: 0.5rem;
@@ -208,6 +212,10 @@
     }
   }
 
+  & .date {
+    margin-bottom: 1rem;
+  }
+
   & .badge {
     margin-bottom: 1rem;
   }
@@ -230,8 +238,8 @@
       float: left;
     }
 
-    & .badge {
-      margin-top: 2rem;
+    & .date {
+      padding-top: 2rem;
     }
 
     &__title {
